@@ -39,4 +39,17 @@ public class DemoTest {
 //        Integer i = list.iterator().next(); //compile error
 
     }
+
+    @Test(expected = ClassCastException.class)
+    public void useGenericsWithCollections() {
+//        List<Object> rawList = new ArrayList();
+        List rawList = new ArrayList();
+        List<String> list  = new ArrayList<>();
+
+        rawList = list;
+        list = rawList;
+
+        rawList.add(69);
+        String s = list.get(0);
+    }
 }
