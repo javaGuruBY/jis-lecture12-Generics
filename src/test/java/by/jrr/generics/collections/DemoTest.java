@@ -3,10 +3,7 @@ package by.jrr.generics.collections;
 import by.jrr.generics.App;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static by.jrr.generics.App.log;
 import static org.junit.Assert.*;
@@ -42,5 +39,4 @@ public class DemoTest {
 //        Integer i = list.iterator().next(); //compile error
 
     }
-
 }
